@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --main-accent: #ff9a9a;
+  --main-bg: #cf5b5b;
+  --darker-bg: #67b0ec;
+  --secondary: #74c7ca;
+}
+
+body {
+  background-image: url("images/cute_think.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 17%;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  width: 80px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.about__section {
+  margin: auto;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--darker-bg);
+  border-radius: 20px;
+  padding-bottom: 25px;
+  padding-top: 50px;
+  margin-bottom: 150px;
+}
+
+.about__container {
+  color: #fff;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__card {
+  width: 100%;
+  font-size: 0.9rem;
+  line-height: 150%;
+}
+
+.about__card h1 {
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+
+.about__card p {
+  font-size: 110%;
+}
+
+.about__card a {
+  font-weight: 500;
+  color: var(--main-accent);
+}
+
+@media screen and (max-width: 960px) {
+  .about__card {
+    font-size: 80%;
+  }
+
+  .infographics table {
+    font-size: 80%;
+  }
+
+  .icon__wrapper {
+    width: 60px;
+    height: 60px;
+    font-size: 70%;
+    flex: 1 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__card {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__section {
+    justify-content: flex-start;
+    max-width: 70%;
+  }
+  .about__container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .about__card {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 150%;
+  }
+  .about__card h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.sticky__footer {
+  background-color: var(--darker-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.heart {
+  color: var(--main-accent);
+}
